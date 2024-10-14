@@ -1,0 +1,30 @@
+mixin moons(n)
+  if n > 0
+    - for (var i = 0; i < n; i++)
+      .moon
+      
+mixin shoots(n)
+  if n > 0
+    - for (var i = 0; i < n; i++)
+      .shoot
+      
+mixin stars(n)
+  if n > 0
+    - for (var i = 0; i < n; i++)
+      .star
+
+.con
+  .header
+    h2 Beneath the Moonlight
+    small Samir Chahine
+  .h-con
+    .hill2
+    .hill
+    .hill3
+  .moons
+    +moons(8)
+  +shoots(4)
+  .stars
+    +stars(200)
+  
+    
